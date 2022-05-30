@@ -9,9 +9,13 @@ html {
   font-size: 62.5%;
 }
 
+body {
+  background: linear-gradient(135deg, hsl(0deg, 0%, 100%), hsl(0deg, 100%, 98%));
+}
+
 .logo {
-  padding: 25px 0;
-  background-color: linear-gradient(135deg, hsl(0deg, 0%, 100%), hsl(0deg, 100%, 98%));
+  padding: 31px 30px;
+  height: 21px;
 }
 
 .img {
@@ -46,15 +50,59 @@ p {
   line-height: 1.9rem;
 }
 
-.form input {
-  border: solid hsl(0deg, 36%, 70%) 2px;
-  border-radius: 30px;
-  height: 40px;
+.form {
+  position: relative;
+  width: 100%;
 }
-.form img {
+.form input {
+  border: solid hsl(0deg, 36%, 70%) 1px;
+  border-radius: 25px;
+  height: 44px;
+  width: 100%;
+  box-sizing: border-box;
+  background: transparent;
+  padding-left: 20px;
+}
+.form input::placeholder {
+  color: hsl(0deg, 36%, 70%);
+  font-weight: 600;
+  opacity: 60%;
+}
+.form input.active {
+  border: solid hsl(0deg, 93%, 68%) 1px;
+}
+.form .btn {
   background: linear-gradient(135deg, hsl(0deg, 80%, 86%), hsl(0deg, 74%, 74%));
-  margin: -12px -12px;
-  padding: 12px 12px;
+  padding: 12px 25px;
+  box-sizing: border-box;
+  position: absolute;
+  right: 0;
+  top: 0;
+  border-radius: 25px;
+  box-shadow: 5px 5px 45px 9px rgba(0, 0, 0, 0.13);
+}
+.form .btn:hover {
+  cursor: pointer;
+  opacity: 60%;
+}
+.form .error-icon, .form .error-msg {
+  display: none;
+}
+.form.error input {
+  border: solid hsl(0deg, 93%, 68%) 1px;
+}
+.form.error .error-icon {
+  display: block;
+  position: absolute;
+  top: 10px;
+  right: 67px;
+}
+.form.error .error-msg {
+  display: inline-block;
+  color: hsl(0deg, 93%, 68%);
+  margin-top: 5px;
+  margin-bottom: 0;
+  margin-left: 21px;
 }
 
 /*# sourceMappingURL=style.css.map */
