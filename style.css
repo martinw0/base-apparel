@@ -7,25 +7,65 @@
 
 html {
   font-size: 62.5%;
+  height: 100%;
 }
 
 body {
   background: linear-gradient(135deg, hsl(0deg, 0%, 100%), hsl(0deg, 100%, 98%));
+  height: 100%;
+}
+
+@media screen and (min-width: 900px) {
+  main {
+    height: 100%;
+    display: grid;
+    grid-template-columns: 57% 43%;
+    grid-template-rows: 100%;
+  }
 }
 
 .logo {
   padding: 31px 30px;
   height: 21px;
 }
+@media screen and (min-width: 900px) {
+  .logo {
+    display: none;
+  }
+}
 
 .img {
   height: 31vh;
   background: url("./images/hero-mobile.jpg");
 }
+@media screen and (min-width: 900px) {
+  .img {
+    height: 100%;
+    grid-column: 2;
+    grid-row: 1;
+    background-image: url("./images/hero-desktop.jpg");
+    background-size: cover;
+  }
+}
 
 .content {
   padding: 66px 32px;
   font-family: "Josefin Sans";
+}
+.content .logo-desktop {
+  display: none;
+}
+@media screen and (min-width: 900px) {
+  .content {
+    grid-column: 1;
+    grid-row: 1;
+    padding: 66px 164px;
+    background-image: url("./images/bg-pattern-desktop.svg");
+  }
+  .content .logo-desktop {
+    display: block;
+    margin-bottom: 136px;
+  }
 }
 
 h1 {
@@ -40,6 +80,13 @@ h1 span {
   color: hsl(0deg, 36%, 70%);
   font-weight: 300;
 }
+@media screen and (min-width: 900px) {
+  h1 {
+    text-align: left;
+    line-height: 6rem;
+    font-size: 5rem;
+  }
+}
 
 p {
   margin-top: 30px;
@@ -48,6 +95,15 @@ p {
   font-size: 1.4rem;
   text-align: center;
   line-height: 1.9rem;
+}
+@media screen and (min-width: 900px) {
+  p {
+    text-align: left;
+    margin-top: 40px;
+    margin-bottom: 58px;
+    font-size: 1.8rem;
+    line-height: 3rem;
+  }
 }
 
 .form {
