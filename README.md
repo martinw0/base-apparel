@@ -56,3 +56,7 @@ Users should be able to:
 
 - Frontend Mentor - [@martinw0](https://www.frontendmentor.io/profile/martinw0)
 - Twitter - [@LeWalletM](https://www.twitter.com/LeWalletM)
+
+## Acknowledgments
+
+Thanks to [@Sdann26](https://www.frontendmentor.io/profile/Sdann26) who helped me and give me some tips and feedback on my solution.

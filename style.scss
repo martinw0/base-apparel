@@ -116,6 +116,7 @@ p {
         box-sizing: border-box;
         background: transparent;
         padding-left: 20px;
+        outline: none;
         &::placeholder {
             color: $desaturated-red;
             font-weight: 600;

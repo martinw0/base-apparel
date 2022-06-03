@@ -118,6 +118,7 @@ p {
   box-sizing: border-box;
   background: transparent;
   padding-left: 20px;
+  outline: none;
 }
 .form input::placeholder {
   color: hsl(0deg, 36%, 70%);
